@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu styling </title>
+    <style>
+        ul { margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+        li {
+            display: inline-block;
+            margin: 2.5px;
+            position: relative;
+        }
+        a {
+            background: #0c09bb;
+            color: #f51397;
+            padding: 10px 25px;
+            display: block;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        a:hover {
+            background: #f80808;
+            color: yellow;
+        }
+
+        ul ul {
+            position: absolute;
+            left: -99999px;
+            top: auto;
+        }
+        ul li:hover ul {
+            left: 0;
+        }
+        ul ul li {
+            margin: 0;
+            width: 145px;
+        }
+        ul ul a {border-radius: 0;
+            background: #262626;
+            border-bottom: 1px solid #ddd;
+        }
+        ul ul a:hover {
+            background: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="navmenu">
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li>
+                <a href="#">blog</a>
+            </li>
+            <li>
+                <a href="#">dropdowns</a>
+                <ul>
+                    <li><a href="#">dropdown</a></li>
+                    <li><a href="#">dropdown 1</a></li>
+                    <li><a href="#">dropdown 2</a></li>
+                    <li><a href="#">dropdown 3</a></li>
+                    <li><a href="#">dropdown 4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>    
+</body>
+</html>
