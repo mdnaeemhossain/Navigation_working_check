@@ -1,16 +1,4 @@
 
-
-          <li class="mobile-nav__item appear-animation appear-delay-{{ animation_row }}">
-            {% if has_dropdown %}
-              <div class="mobile-nav__has-sublist">
-                {% if link.url == '#' %}
-                  <button type="button"
-                    aria-controls="Linklist-{{ child_list_handle }}"
-                    {% if link.active or link.child_active %}aria-open="true"{% endif %}
-                    class="mobile-nav__link--button mobile-nav__link--top-level collapsible-trigger collapsible--auto-height {% if link.active or link.child_active %}is-open{% endif %}">
-                    <span class="mobile-nav__faux-link" {% if link.active %}data-active="true"{% endif %}>
-                      {{ link.title }}
-                    </span>
                     <div class="mobile-nav__toggle">
                       <span class="faux-button">
                         {% include 'collapsible-icons' %}
