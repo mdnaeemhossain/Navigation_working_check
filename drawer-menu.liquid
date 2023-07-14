@@ -1,21 +1,5 @@
 
 
-                            <a href="{{ childlink.url }}"
-                              class="mobile-nav__link"
-                              id="Sublabel-{{ grand_child_list_handle }}"
-                              {% if childlink.active %}data-active="true"{% endif %}>
-                              {{ childlink.title | escape }}
-                            </a>
-                          {% endif %}
-                          {% if childlink.url != '#' and has_sub_dropdown %}
-                            <button type="button"
-                              aria-controls="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}"
-                              class="collapsible-trigger {% if childlink.active or childlink.child_active %}is-open{% endif %}">
-                              {% include 'collapsible-icons-alt' %}
-                            </button>
-                          {% endif %}
-                        </div>
-
                         {% if has_sub_dropdown %}
                           <div
                             id="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}"
