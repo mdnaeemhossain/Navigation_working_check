@@ -1,15 +1,4 @@
 
-                  <div class="mobile-nav__toggle">
-                    <button type="button"
-                      aria-controls="Linklist-{{ child_list_handle }}"
-                      {% if link.active or link.child_active %}aria-open="true"{% endif %}
-                      class="collapsible-trigger collapsible--auto-height {% if link.active or link.child_active %}is-open{% endif %}">
-                      {% include 'collapsible-icons' %}
-                    </button>
-                  </div>
-                {% endif %}
-              </div>
-            {% else %}
               <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level" {% if link.active %}data-active="true"{% endif %}>{{ link.title }}</a>
             {% endif %}
 
