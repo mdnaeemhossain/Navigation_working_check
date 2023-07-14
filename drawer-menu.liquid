@@ -1,26 +1,7 @@
 
 
                         {% if has_sub_dropdown %}
-                          <div
-                            id="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}"
-                            aria-labelledby="Sublabel-{{ grand_child_list_handle }}"
-                            class="mobile-nav__sublist collapsible-content collapsible-content--all {% if childlink.active or childlink.child_active %}is-open{% endif %}"
-                            {% if childlink.active or childlink.child_active %}style="height: auto;"{% endif %}>
-                            <div class="collapsible-content__inner">
-                              <ul class="mobile-nav__grandchildlist">
-                                {% for grandchildlink in childlink.links %}
-                                  <li class="mobile-nav__item">
-                                    <a href="{{ grandchildlink.url }}" class="mobile-nav__link" {% if grandchildlink.active %}data-active="true"{% endif %}>
-                                      {{ grandchildlink.title }}
-                                    </a>
-                                  </li>
-                                {% endfor %}
-                              </ul>
-                            </div>
-                          </div>
-                        {% endif %}
-                      </li>
-                    {% endfor %}
+
                   </ul>
                 </div>
               </div>
