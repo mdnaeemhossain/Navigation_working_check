@@ -1,19 +1,4 @@
 
-
-                        {% if has_sub_dropdown %}
-
-                  </ul>
-                </div>
-              </div>
-            {% endif %}
-          </li>
-        {% endfor %}
-
-        {%- assign have_secondary_list = false -%}
-        {% if section.settings.toolbar_menu != blank or shop.customer_accounts_enabled %}
-          {%- assign have_secondary_list = true -%}
-        {% endif %}
-
         {% if have_secondary_list %}
           <li class="mobile-nav__item mobile-nav__item--secondary">
             <div class="grid">
