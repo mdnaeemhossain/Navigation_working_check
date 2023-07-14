@@ -1,19 +1,4 @@
 
-
-<div id="NavDrawer" class="drawer drawer--{{ drawer_position }}">
-  <div class="drawer__contents">
-    <div class="drawer__fixed-header drawer__fixed-header--full">
-      <div class="drawer__header drawer__header--full appear-animation appear-delay-{{ animation_row }}">
-        <div class="h2 drawer__title">
-        </div>
-        <div class="drawer__close">
-          <button type="button" class="drawer__close-button js-drawer-close">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
-            <span class="icon__fallback-text">{{ 'general.drawers.close_menu' | t }}</span>
-          </button>
-        </div>
-      </div>
-    </div>
     <div class="drawer__scrollable">
       <ul class="mobile-nav{% if settings.type_navigation_style == 'heading' %} mobile-nav--heading-style{% endif %}" role="navigation" aria-label="Primary">
         {% for link in main_menu.links %}
