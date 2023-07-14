@@ -1,13 +1,4 @@
 
-    <div class="drawer__scrollable">
-      <ul class="mobile-nav{% if settings.type_navigation_style == 'heading' %} mobile-nav--heading-style{% endif %}" role="navigation" aria-label="Primary">
-        {% for link in main_menu.links %}
-          {%- assign animation_row = animation_row | plus: 1 -%}
-          {%- assign child_list_handle = link.url | handleize | append: forloop.index -%}
-          {%- assign has_dropdown = false -%}
-          {% if link.links != blank %}
-            {%- assign has_dropdown = true -%}
-          {% endif %}
 
           <li class="mobile-nav__item appear-animation appear-delay-{{ animation_row }}">
             {% if has_dropdown %}
