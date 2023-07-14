@@ -1,20 +1,4 @@
 
-              <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level" {% if link.active %}data-active="true"{% endif %}>{{ link.title }}</a>
-            {% endif %}
-
-            {% if has_dropdown %}
-              <div id="Linklist-{{ child_list_handle }}"
-                class="mobile-nav__sublist collapsible-content collapsible-content--all {% if link.active or link.child_active %}is-open{% endif %}"
-                aria-labelledby="Label-{{ child_list_handle }}"
-                {% if link.active or link.child_active %}style="height: auto;"{% endif %}>
-                <div class="collapsible-content__inner">
-                  <ul class="mobile-nav__sublist">
-                    {% for childlink in link.links %}
-                      {%- assign has_sub_dropdown = false -%}
-                      {%- assign grand_child_list_handle = childlink.url | handleize | append: forloop.index -%}
-                      {% if childlink.links != blank %}
-                        {%- assign has_sub_dropdown = true -%}
-                      {% endif %}
 
                       <li class="mobile-nav__item">
                         <div class="mobile-nav__child-item">
