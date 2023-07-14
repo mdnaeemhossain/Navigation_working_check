@@ -1,16 +1,4 @@
 
-        {% if have_secondary_list %}
-          <li class="mobile-nav__item mobile-nav__item--secondary">
-            <div class="grid">
-              {% if section.settings.toolbar_menu != blank %}
-                {% for link in toolbar_menu.links %}
-                  {%- assign animation_row = animation_row | plus: 1 -%}
-                  <div class="grid__item one-half appear-animation appear-delay-{{ animation_row }} medium-up--hide">
-                    <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
-                  </div>
-                {% endfor %}
-              {% endif %}
-
               {% if shop.customer_accounts_enabled %}
                 {%- assign animation_row = animation_row | plus: 1 -%}
                 <div class="grid__item one-half appear-animation appear-delay-{{ animation_row }}">
