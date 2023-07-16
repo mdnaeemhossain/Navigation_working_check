@@ -1,13 +1,4 @@
 
-                  <div class="h5">
-                    <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
-                  </div>
-
-                  {% if childlink.levels > 0 %}
-                    {%- assign previous_column_type = 'full' -%}
-                  {% else %}
-                    {%- assign previous_column_type = 'single' -%}
-                  {% endif %}
 
                   {% for grandchildlink in childlink.links %}
                     <div>
