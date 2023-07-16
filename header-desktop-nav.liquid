@@ -1,18 +1,4 @@
-
-                  {% if childlink.levels > 0 and forloop.index != 1 %}
-                    {%- assign create_new_column = true -%}
-                  {% endif %}
-
-                  {% if childlink.levels == 0 and previous_column_type == 'full' %}
-                    {%- assign create_new_column = true -%}
-                  {% endif %}
-
-                  {% if create_new_column %}
-                    </div><div class="grid__item medium-up--one-fifth appear-animation appear-delay-{{ animation_column }}">
-                    {%- assign animation_column = animation_column | plus: 1 -%}
-                  {% endif %}
-
-                  {%- assign subcollection_drop = false -%}
+e -%}
                   {% if childlink.levels > 0 and childlink.url contains '/collections/' %}
                     {%- assign lang_code_string = request.locale.iso_code | prepend: '/' -%}
                     {%- assign subcollection_handle = childlink.url | remove: '/collections/' | remove: lang_code_string -%}
