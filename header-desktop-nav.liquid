@@ -1,15 +1,3 @@
-e -%}
-                  {% if childlink.levels > 0 and childlink.url contains '/collections/' %}
-                    {%- assign lang_code_string = request.locale.iso_code | prepend: '/' -%}
-                    {%- assign subcollection_handle = childlink.url | remove: '/collections/' | remove: lang_code_string -%}
-                    {%- assign subcollection_drop = collections[subcollection_handle] -%}
-                    {% if subcollection_drop.image != blank %}
-                      <a
-                        href="{{ childlink.url }}"
-                        class="megamenu__colection-image"
-                        style="background-image: url({{ collections[subcollection_handle].image | img_url: '400x' }})"></a>
-                    {% endif %}
-                  {% endif %}
 
                   <div class="h5">
                     <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
