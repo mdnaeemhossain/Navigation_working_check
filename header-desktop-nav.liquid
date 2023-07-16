@@ -1,18 +1,4 @@
 
-
-                  {% for grandchildlink in childlink.links %}
-                    <div>
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                        {{grandchildlink.title}}
-                      </a>
-                    </div>
-                  {% endfor %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
-      {% elsif has_dropdown %}
         <ul class="site-nav__dropdown text-left">
           {% for childlink in link.links %}
             {%- assign has_sub_dropdown = false -%}
