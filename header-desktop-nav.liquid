@@ -1,18 +1,1 @@
 
-              </a>
-              {% if has_sub_dropdown %}
-                <ul class="site-nav__deep-dropdown">
-                  {% for grandchildlink in childlink.links %}
-                    <li>
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
