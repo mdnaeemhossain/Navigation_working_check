@@ -1,15 +1,4 @@
 
-  {% for link in main_menu.links limit: limit offset: offset %}
-    {%- assign has_dropdown = false -%}
-    {%- assign is_megamenu = false -%}
-    {% if link.links != blank %}
-      {%- assign has_dropdown = true -%}
-      {% if link.levels > 1 %}
-        {%- assign is_megamenu = true -%}
-      {% endif %}
-    {% endif %}
-
-    <li
       class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}"
       {% if has_dropdown %}aria-haspopup="true"{% endif %}>
 
