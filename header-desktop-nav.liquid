@@ -1,14 +1,4 @@
 
-
-        <div class="site-nav__dropdown megamenu text-left">
-          <div class="page-width">
-            <div class="grid{% if dropdown_alignment == 'center' %} grid--center{% endif %}">
-              <div class="grid__item medium-up--one-fifth appear-animation appear-delay-{{ animation_column }}">
-                {%- assign animation_column = animation_column | plus: 1 -%}
-
-                {% for childlink in link.links %}
-                  {%- assign create_new_column = false -%}
-
                   {% if childlink.levels > 0 and forloop.index != 1 %}
                     {%- assign create_new_column = true -%}
                   {% endif %}
