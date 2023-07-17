@@ -1,4 +1,4 @@
-    {% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' or section.settings.main_menu_alignment == 'left-drawer' %}
+
       <button
         type="button"
         class="site-nav__link site-nav__link--icon js-drawer-open-nav{% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' %} medium-up--hide{% endif %}"
@@ -7,7 +7,6 @@
         <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
       </button>
     {% endif %}
-
     <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon js-drawer-open-cart js-no-transition" aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
       <span class="cart-link">
         {%- if settings.cart_icon == 'cart' -%}
