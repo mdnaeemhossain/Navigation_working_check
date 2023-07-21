@@ -1,19 +1,4 @@
 
-    .site-header__logo a {
-      width: {{ block.settings.mobile_logo_width }}px;
-    }
-    .is-light .site-header__logo .logo--inverted {
-      width: {{ block.settings.mobile_logo_width }}px;
-    }
-    @media only screen and (min-width: 769px) {
-      .site-header__logo a {
-        width: {{ block.settings.desktop_logo_width }}px;
-      }
-
-      .is-light .site-header__logo .logo--inverted {
-        width: {{ block.settings.desktop_logo_width }}px;
-      }
-    }
     {% endstyle %}
 
     {% if template == 'index' %}
