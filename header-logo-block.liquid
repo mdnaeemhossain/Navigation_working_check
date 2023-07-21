@@ -1,16 +1,3 @@
-        </a>
-      {% endif %}
-    {% else %}
-      <a href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
-    {% endif %}
-    {% if template == 'index' %}
-      </h1>
-    {% else %}
-      </div>
-    {% endif %}
-
-  {% endif %}
-{% endfor %}
 
 {% unless has_logo %}
   {% style %}
