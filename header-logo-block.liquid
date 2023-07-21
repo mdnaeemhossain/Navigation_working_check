@@ -1,11 +1,4 @@
-{% for block in section.blocks %}
-  {% if block.type == 'logo' %}
-
-    {%- assign has_logo = true -%}
-    {%- assign header_logo_size = block.settings.desktop_logo_width | append: 'x' -%}
-    {%- assign header_logo_size_mobile = block.settings.mobile_logo_width | append: 'x' -%}
-
-    {% style %}
+   {% style %}
     .header-item--logo,
     .header-layout--left-center .header-item--logo,
     .header-layout--left-center .header-item--icons {
