@@ -1,7 +1,3 @@
-{%- assign sticky_header = false -%}
-{% if section.settings.header_style == 'sticky' %}
-  {%- assign sticky_header = true -%}
-{% endif %}
 {%- assign overlay_header = false -%}
 {%- assign has_logo = false -%}
 {% if template_name == 'index' and section.settings.sticky_index %}
