@@ -1,8 +1,4 @@
-{%- assign overlay_header = false -%}
-{%- assign has_logo = false -%}
-{% if template_name == 'index' and section.settings.sticky_index %}
-  {%- assign overlay_header = true -%}
-{% endif %}
+
 {% if template_name == 'collection' and collection.image and section.settings.sticky_collection %}
   {%- assign overlay_header = true -%}
 {% endif %}
